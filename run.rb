@@ -18,8 +18,8 @@ csv_data.each do |csv|
   counter2 += 1
 end
 
-erb = ERB.new(File.read('valiables.xml.erb'))
-File.open("valiables.xml", "w") do |f| 
+erb = ERB.new(File.read('variables.xml.erb'))
+File.open("variables.xml", "w") do |f| 
   f.puts(erb.result(binding))
 end
 
